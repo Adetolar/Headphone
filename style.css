@@ -1,0 +1,18 @@
+:root{
+    --ff--nav: Josefin Slab, serif;
+    --fs--nav: 2em;
+    --fw--nav:600;
+
+    --ff--headings: Quattrocento Sans, serif;
+    --fs--headings: 5.3em;
+    --fw--headings:400;
+
+
+    --ff--body: Poppins, serif;
+    --fs--body: 1.75em;
+    --fw--body:400;
+
+    --primary-color:#0F4382;
+    --background-color:background: radial-gradient(49.57% 98.02% at 49.57% 50.37%, #E5FAFF 21.15%, #98BAC6 100%, #35CDFF 100.01%);
+
+}
