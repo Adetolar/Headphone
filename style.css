@@ -1,18 +1,140 @@
-:root{
-    --ff--nav: Josefin Slab, serif;
-    --fs--nav: 2em;
-    --fw--nav:600;
+:root {
+  --ff--large-screen--nav: Josefin Slab, serif;
+  --fs--large-screen--nav: 2em;
+  --fw--large-screen--nav: 600;
 
-    --ff--headings: Quattrocento Sans, serif;
-    --fs--headings: 5.3em;
-    --fw--headings:400;
+  --ff--large-screen--headings: Quattrocento Sans, serif;
+  --fs--large-screen--headings: 5.3em;
+  --fw--large-screen--headings: 400;
 
+  --ff--large-screen--body: Poppins, serif;
+  --fs--large-screen--body: 1.75em;
+  --fw--large-screen--body: 400;
 
-    --ff--body: Poppins, serif;
-    --fs--body: 1.75em;
-    --fw--body:400;
+  --ff--large-screen--buttton: Poppins;
+  --fs--large-screen--buttton: 1.5em;
+  --fw--large-screen--button: 500;
 
-    --primary-color:#0F4382;
-    --background-color:background: radial-gradient(49.57% 98.02% at 49.57% 50.37%, #E5FAFF 21.15%, #98BAC6 100%, #35CDFF 100.01%);
+  --ff--small-screen--nav: Josefin Slab, serif;
+  --fs--small-screen--nav: 0.5em;
+  --fw--small-screen--nav: 500;
 
+  --ff--small-screen--headings: Lato, serif;
+  --fs--small-screen--headings: 2em;
+  --fw--small-screen--headings: 700;
+
+  --ff--small-screen--body: Poppins, serif;
+  --fs--small-screen--body: 0.8em;
+  --fw--small-screen--body: 400;
+
+  --ff--small-screen--buttton: Poppins;
+  --fs--small-screen--buttton: 1em;
+
+  --primary-color: #0f4382;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+  font-weight: var(--fw--body);
+  color: var(--primary-color);
+  max-width: 1440px;
+  background-color: #c5e9f5;
+  /* background: radial-gradient(
+    49.57% 98.02% at 49.57% 50.37%,
+    #e5faff 21.15%,
+    #98bac6 100%,
+    #35cdff 100.01%
+    
+  ); */
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 90%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120%;
+}
+
+.header__container {
+  margin: 2px auto;
+  display: flex;
+}
+
+nav a {
+  margin-right: 0.9em;
+  text-decoration: none;
+  display: block;
+  font-size: var(--fs--small-screen--nav);
+  /* min-width:40% ; */
+}
+
+.logo {
+  width: 40%;
+}
+
+.main__container {
+  margin: 0px auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--ff--small-screen--headings);
+  font-size: var(--fs--small-screen--headings);
+}
+
+h1 + p {
+  margin: 0.9rem 0em;
+  font-weight: 400;
+}
+
+.headphone__links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.headphone__links a {
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  padding: 0.3em 1em;
+  color: var(--primary-color);
+  font-family: var(--ff--small-screen--buttton);
+  width: var(--fw--large-screen--button);
+  border-radius: 20px;
+}
+
+.headphone__links a:hover {
+  color: white;
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.socialmedia__handle {
+  margin: 10px auto;
+  /* border: 1px solid red; */
+}
+.fa-brands a {
+  margin-left: 1em;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.6em;
 }
