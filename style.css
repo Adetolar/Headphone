@@ -16,7 +16,7 @@
   --fw--large-screen--button: 500;
 
   --ff--small-screen--nav: Josefin Slab, serif;
-  --fs--small-screen--nav: 0.5em;
+  --fs--small-screen--nav: 0.6em;
   --fw--small-screen--nav: 500;
 
   --ff--small-screen--headings: Lato, serif;
@@ -64,26 +64,29 @@ img {
 
 nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120%;
 }
 
 .header__container {
   margin: 2px auto;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav a {
-  margin-right: 0.9em;
+  margin: 0em 1.5em;
   text-decoration: none;
   display: block;
   font-size: var(--fs--small-screen--nav);
   /* min-width:40% ; */
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
 .logo {
-  width: 40%;
+  width: 30%;
 }
 
 .main__container {
@@ -135,6 +138,88 @@ footer {
   text-align: center;
 }
 
+i.fa-brands.fa-2x.fa-facebook-f,
+i.fa-brands.fa-2x.fa-instagram,
+i.fa-brands.fa-2x.fa-twitter {
+  display: none;
+}
+
 footer p {
   font-size: 0.6em;
+}
+
+@media screen and (min-width: 64rem) {
+  body {
+    /* background: ; */
+    margin: 0px auto;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-family: var(--ff--large-screen--headings);
+    font-size: var(--fs--large-screen--headings);
+    font-weight: var(--fw--large-screen--headings);
+  }
+
+  h1 + p {
+    font-size: 1.75em;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  nav {
+    font-size: var(--fs--large-screen--nav);
+    font-family: var(--ff--large-screen--nav);
+    font-weight: var(--fw--large-screen--nav);
+    /* justify-content: space-between; */
+  }
+
+  .main__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .main__content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .headphone__main_image {
+    width: 40%;
+  }
+
+  .headphone__links {
+    justify-content: left;
+  }
+
+  .headphone__links a {
+    font-size: var(--fs--large-screen--buttton);
+    font-family: var(--ff--large-screen--buttton);
+    font-weight: var(--fw--large-screen--button);
+  }
+
+  .headphone__links a:nth-child(1) {
+    margin-right: 20px;
+  }
+
+  footer p {
+    font-size: medium;
+  }
+
+  i.fa-brands.fa-1x.fa-facebook-f,
+  i.fa-brands.fa-1x.fa-instagram,
+  i.fa-brands.fa-1x.fa-twitter {
+    display: none;
+  }
+
+  i.fa-brands.fa-2x.fa-facebook-f,
+  i.fa-brands.fa-2x.fa-instagram,
+  i.fa-brands.fa-2x.fa-twitter {
+    display: inline;
+  }
 }
